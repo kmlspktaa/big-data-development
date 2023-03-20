@@ -15,7 +15,7 @@ from pyspark.sql.types import *
 # create a Spark session
 spark = SparkSession.builder.appName("Stock-Market Predictions").getOrCreate()
 
-cola_df = spark.read.load("/Users/kamalsapkota/Desktop/big-data-development/stocks-data/KO.csv",
+cola_df = spark.read.load("/Users/kamalsapkota/Desktop/dataLake/2023/spark/big-data-development/stocks-data/KO.csv",
                         format="csv",
                         sep=",",
                         inferSchema="true",
